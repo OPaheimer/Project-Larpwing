@@ -1,0 +1,18 @@
+server:
+  api_key_env: ROUTER_API_KEY
+  default_timeout_seconds: 600
+
+# Add your model aliases here.
+# Run `python configure.py` for an interactive wizard.
+# Or edit manually:
+#
+#   my-model:
+#     provider: deepseek
+#     base_url: https://api.deepseek.com/v1
+#     api_key_env: MY_MODEL_API_KEY
+#     api_url_env: MY_MODEL_API_URL
+#     model: deepseek-v4-flash
+#     context_length: 128000
+#     supports_tools: true
+#     supports_streaming: true
+models: {}

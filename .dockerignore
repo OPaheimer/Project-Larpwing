@@ -1,0 +1,37 @@
+# Git
+.git
+.gitignore
+README*.md
+prompts/
+docs/
+claudeoutput-original.md
+START_HERE_FOR_HERMES.md
+tests-plan/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tests (not needed at runtime)
+tests/
+
+# Build context noise
+Dockerfile
+docker-compose.yml
+.dockerignore

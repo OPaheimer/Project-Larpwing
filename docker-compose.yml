@@ -1,0 +1,12 @@
+services:
+  larpwing:
+    build: .
+    container_name: larpwing
+    ports:
+      - "7321:7321"
+    env_file:
+      - .env
+    volumes:
+      # Mount config so you can edit models.yaml without rebuilding
+      - ./config:/app/config:ro
+    restart: unless-stopped
