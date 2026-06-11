@@ -3,9 +3,9 @@
 A lightweight OpenAI-compatible model alias router. Point any OpenAI client at Larpwing, use short alias names for your models, and Larpwing translates them to real backend model IDs and forwards the request.
 
 ```
-          ┌──────────────┐     model: "fast-chat"         ┌──────────────────┐
+          ┌──────────────┐     model: "gpt-6.7-max"         ┌──────────────────┐
  Client ──▶  Larpwing    ──────────────────────────────────▶  DeepSeek API    │
-          │  127.0.0.1   │     real model: "gpt-4o-mini"         OpenAI      │
+          │  127.0.0.1   │     real model: "gpt-5.4-mini"         OpenAI      │
           │  :7321       ◀──────────────────────────────────  Groq           │
           └──────────────┘     response (JSON or SSE)     │  Your provider  │
                                                           └──────────────────┘
